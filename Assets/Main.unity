@@ -166,47 +166,6 @@ Transform:
   - {fileID: 470486546}
   m_Father: {fileID: 0}
   m_RootOrder: 2
---- !u!1 &226838546
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 226838547}
-  - 61: {fileID: 226838548}
-  m_Layer: 0
-  m_Name: ClearTrigger
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &226838547
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 226838546}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 5.5, z: 0}
-  m_LocalScale: {x: 1, y: 2.98750067, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1966796905}
-  m_RootOrder: 2
---- !u!61 &226838548
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 226838546}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
 --- !u!4 &248141669 stripped
 Transform:
   m_PrefabParentObject: {fileID: 462424, guid: 9da46f61a031e46c5b4b13b2e83dab75, type: 2}
@@ -652,7 +611,7 @@ GameObject:
   - 114: {fileID: 1088773961}
   m_Layer: 0
   m_Name: GameManager
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1235,10 +1194,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9da46f61a031e46c5b4b13b2e83dab75, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &1966796905 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 463172, guid: 455f53afb3952454a97465f616ae6046, type: 2}
-  m_PrefabInternal: {fileID: 1700450932}
 --- !u!1 &1972963324
 GameObject:
   m_ObjectHideFlags: 0

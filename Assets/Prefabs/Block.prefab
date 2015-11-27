@@ -1,5 +1,22 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &120730
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 459850}
+  - 61: {fileID: 6194958}
+  - 114: {fileID: 11472200}
+  m_Layer: 0
+  m_Name: ClearTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &158390
 GameObject:
   m_ObjectHideFlags: 1
@@ -78,6 +95,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 463172}
   m_RootOrder: 0
+--- !u!4 &459850
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 120730}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 5.5, z: 0}
+  m_LocalScale: {x: 1, y: 2.98750067, z: 1}
+  m_Children: []
+  m_Father: {fileID: 463172}
+  m_RootOrder: 2
 --- !u!4 &463172
 Transform:
   m_ObjectHideFlags: 1
@@ -90,6 +119,7 @@ Transform:
   m_Children:
   - {fileID: 403422}
   - {fileID: 476470}
+  - {fileID: 459850}
   m_Father: {fileID: 479976}
   m_RootOrder: 0
 --- !u!4 &476470
@@ -111,7 +141,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 187288}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -5.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 463172}
@@ -143,6 +173,19 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 1, y: 8}
+--- !u!61 &6194958
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 120730}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!114 &11412884
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -171,6 +214,17 @@ MonoBehaviour:
   speed: 3
   startPosition: 8
   endPosition: -8
+--- !u!114 &11472200
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 120730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a058832d70a9456a9c550cc53ae032d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &21208184
 SpriteRenderer:
   m_ObjectHideFlags: 1
