@@ -70,6 +70,8 @@ public class AzarashiContoller : MonoBehaviour {
 			return;
 		}
 
+		Camera.main.SendMessage("Clash");
+
 		isDead = true;  
 
 
