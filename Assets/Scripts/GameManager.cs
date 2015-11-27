@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour {
 	}
 
 	State state;
+	int score;
 
 	public AzarashiContoller azarashi;
 	public GameObject blocks;
@@ -73,5 +74,9 @@ public class GameManager : MonoBehaviour {
 
 	void Reload(){
 		Application.LoadLevel(Application.loadedLevel);
+	}
+
+	public void IncreaseScore(){
+		score++;
 	}
 }
