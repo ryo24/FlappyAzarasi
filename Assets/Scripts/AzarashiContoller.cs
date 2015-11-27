@@ -12,7 +12,7 @@ public class AzarashiContoller : MonoBehaviour {
 	public float relativeVelocityX;  //ditermined by Inspector 
 	public  GameObject sprite ;
 
-	public void IsDead(){
+	public bool IsDead(){
 		return isDead;
 	}
 
