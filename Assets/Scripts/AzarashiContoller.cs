@@ -39,6 +39,10 @@ public class AzarashiContoller : MonoBehaviour {
 		if (isDead) {
 			return;
 		}
+
+		if (rd2d.isKinematic) {
+			return;
+		}
 		rd2d.velocity = new Vector2 (0.0f, flapVelocity);
 	}
 
@@ -64,6 +68,11 @@ public class AzarashiContoller : MonoBehaviour {
 
 		isDead = true;  
 
+
+	}
+
+	public void SetSteerActive(bool active){
+		rd2d.isKinematic = !active;
 
 	}
 
