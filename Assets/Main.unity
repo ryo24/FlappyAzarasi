@@ -866,6 +866,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   azarashi: {fileID: 1264482533}
   blocks: {fileID: 1972963324}
+  scoreLabel: {fileID: 1105268059}
+  stateLabel: {fileID: 438683234}
 --- !u!4 &1088773962
 Transform:
   m_ObjectHideFlags: 0

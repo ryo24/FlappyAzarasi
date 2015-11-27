@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
 
@@ -14,6 +15,8 @@ public class GameManager : MonoBehaviour {
 
 	public AzarashiContoller azarashi;
 	public GameObject blocks;
+	public Text scoreLabel;
+	public Text stateLabel;
 
 	// Use this for initialization
 	void Start () {
@@ -51,6 +54,11 @@ public class GameManager : MonoBehaviour {
 
 		azarashi.SetSteerActive(false);
 		blocks.SetActive(false);
+
+		scoreLabel.text = "Score : " + 0;
+
+		stateLabel.gameObject.SetActive(true);
+		stateLabel.text = "Ready";
 	}
 
 	void GameStart(){
@@ -60,6 +68,9 @@ public class GameManager : MonoBehaviour {
 		blocks.SetActive(true);
 
 		azarashi.Flap();
+
+		stateLabel.gameObject.SetActive(false);
+		stateLabel.text = "";
 	}
 
 	void GameOver(){
@@ -70,6 +81,9 @@ public class GameManager : MonoBehaviour {
 		foreach (ScrollScript ss in scrollObjects){
 			ss.enabled = false;
 		}
+
+		stateLabel.gameObject.SetActive(true);
+		stateLabel.text = "GameOver";
 	}
 
 	void Reload(){
@@ -78,5 +92,6 @@ public class GameManager : MonoBehaviour {
 
 	public void IncreaseScore(){
 		score++;
+		scoreLabel.text = "Score : " + score;
 	}
 }
