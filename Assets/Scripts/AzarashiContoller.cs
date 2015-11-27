@@ -12,6 +12,10 @@ public class AzarashiContoller : MonoBehaviour {
 	public float relativeVelocityX;  //ditermined by Inspector 
 	public  GameObject sprite ;
 
+	public void IsDead(){
+		return isDead;
+	}
+
 	void Awake(){
 		rd2d = GetComponent<Rigidbody2D> ();
 		animator = sprite.GetComponent<Animator> ();
